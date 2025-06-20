@@ -9,7 +9,7 @@ import subprocess
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Using device: {device}")
 
-# YOLOv8モデルのロード（GPUを使用）
+# YOLOv10モデルのロード（GPUを使用）
 model = YOLO("yolov10x.pt").to(device)
 
 # 分類対象（ターゲット）
